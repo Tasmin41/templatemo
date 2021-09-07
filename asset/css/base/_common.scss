@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.fix:after,.fix:before{
+    content: "";
+    clear: both;
+    display: table;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    text-transform:capitalize ;
+}
+ul{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+.btn{
+    padding: 15px 25px;
+    margin-left: 10px;
+    background-color: $banner_btn_bg;
+    color: #fff;
+    transition: .3s;
+    &:hover{
+        background-color: $header_color;
+        font-weight: bold;
+    }
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    border:2px solid #ddd;
+    &:before{
+        content: "";
+        position: absolute;
+        background-color: #333;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.75;
+        z-index: -1;
+
+    }
+
+}
+.add-btn{
+    font-size: 16px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+    &.clr{
+        background-color: #0066AA;
+    }
+    &.normal{
+        background-color: #fff;
+        color: #333;
+    }
+}
+
+
+        
+
+    
+
+
+@for $i from 1 through 10{
+    .pt-#{$i*10}{
+        padding-top: $i*10px;
+    }
+    .pb-#{$i*10}{
+        padding-bottom: $i*10px;
+    }
+    .pl-#{$i*10}{
+        padding-left: $i*10px;
+    }
+    .pr-#{$i*10}{
+        padding-right: $i*10px;
+    }
+}

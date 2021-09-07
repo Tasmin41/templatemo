@@ -1,0 +1,45 @@
+
+.header {
+    display: grid;
+    grid-template-columns: 25% auto;
+    column-gap: 30px;
+    padding: 0 20px;
+    background-color:$header_color;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #ddd;
+    .header_logo {
+        padding: 50px 0;
+        h4 {
+            color: #fff;
+            font-weight: normal;
+          }
+      }
+      .header_menu {
+        margin-top: 120px;
+        ul {
+            display: grid;
+            grid-auto-columns: repeat(4,auto);
+            grid-template-columns: repeat(4,auto);
+            column-gap: 20px;
+            align-content: end;
+            justify-content: end;
+            li{
+                a {
+                    margin-left: 30px;
+                    background-color:$header_button;
+                    padding: 15px 30px;
+                    color: $header_color;
+                    transition: .3s;
+                    &:hover{
+                        color: $header_btn_font;
+                        text-decoration:underline;
+                    }
+                  }
+            }
+          }
+      }
+  }
+  
+  
+ 

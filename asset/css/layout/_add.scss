@@ -1,0 +1,28 @@
+.add{
+    background-color: $bg_gray;
+    padding: 10px 50px 40px 50px;
+    .add1 {
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+    }
+    .add2 {
+      margin: 90px;
+      text-align: center;
+    }
+}
+.add-part{
+    overflow: hidden;
+}
+
+  
+  .add-icon i {
+    color: #333;
+  }
+  
+
+  .add2-title h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0.2;
+  }
